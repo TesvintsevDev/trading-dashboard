@@ -25,7 +25,7 @@ The full dev command starts:
 
 ## API
 
-The API uses Node's built-in `node:sqlite` module and stores local data in `storage/trading-dashboard.sqlite`. The storage folder is ignored by git.
+The API uses Node's built-in `node:sqlite` module and stores local data in `storage/trading-dashboard.sqlite`. The `storage/` folder is listed in the repo root `.gitignore` — never commit it. If SQLite or local paths were pushed earlier, see [docs/HISTORY_CLEANUP.md](../docs/HISTORY_CLEANUP.md).
 
 Endpoints:
 
