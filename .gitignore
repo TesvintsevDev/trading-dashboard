@@ -1,0 +1,33 @@
+# Local API database (trades, bars, scans)
+trading-dashboard-react/storage/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Cursor / Codex (skills, rules — only on your machine)
+.cursor/
+**/.cursor/
+**/skills/
+SKILL.md
+**/*.mdc
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+dist/
+*.local
+
+# Editor and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Logs
+*.log
+npm-debug.log*

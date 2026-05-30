@@ -1,0 +1,1505 @@
+{
+  "appVersion": 1,
+  "importedFrom": "dashboard_data_2026-05-14.json",
+  "date": "2026-05-14",
+  "pageTitle": "Отбор на 14 мая 2026",
+  "note": "Strict premarket scan: US stocks, price $10-$150, ATR $1-$3.5, avg volume >=700k. Spread не подтвержден источником, проверять вручную перед входом. Сценарии активируются только после 5m impulse -> pullback 2-3 свечи -> base -> breakout/breakdown.",
+  "defaultSymbol": "GEHC",
+  "marketDataFile": "market-data-2026-05-14.json",
+  "lastRefreshAt": "2026-05-14T17:48:07.295Z",
+  "premarketSnapshot": [
+    {
+      "symbol": "POET",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Long",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after long impulse",
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "long impulse seen; wait base, no chase"
+      },
+      "score": "8.2/10",
+      "price": "$19.70",
+      "atr": "$2.42",
+      "avgVolume": "48.73M",
+      "spread": "н/д",
+      "why": "premarket gainer with heavy volume; optical/AI infrastructure theme in play.",
+      "tradeCharacter": "TipRanks premarket gainer: +21.19%, premarket volume 19.97M.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket gainer: +21.19%, premarket volume 19.97M.",
+      "companyDesc": "POET Technologies",
+      "trigger": "Long только после 5m impulse/pullback/base и выхода выше $20.65.",
+      "invalidation": "Потеря базы или 5m close ниже $19.70.",
+      "targets": "$21.98, затем $23.07.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $19.70, ATR $2.42, avg volume 48.73M; catalyst/driver: TipRanks premarket gainer: +21.19%, premarket volume 19.97M.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 20.65,
+        "stopPrice": 19.7,
+        "target1Price": 21.98,
+        "target2Price": 23.07
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": 21.19,
+        "price": 17.41,
+        "volume": "19.97M"
+      },
+      "levels": {
+        "prevHigh": 14.75,
+        "prevLow": 12.94,
+        "premarketHigh": 18.83,
+        "premarketLow": 13.75,
+        "dayHigh": 20.65,
+        "dayLow": 17.39,
+        "last": 19.7
+      },
+      "snapshotStatus": "waiting for 2-3 candle pullback / base after long impulse"
+    },
+    {
+      "symbol": "DOCS",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after short impulse",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "short impulse seen; wait base, no chase"
+      },
+      "score": "8.2/10",
+      "price": "$17.55",
+      "atr": "$1.50",
+      "avgVolume": "3.77M",
+      "spread": "н/д",
+      "why": "major premarket gap down with volume; short continuation only after failed bounce/base breakdown.",
+      "tradeCharacter": "TipRanks premarket loser: -22.04%, premarket volume 1.16M.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket loser: -22.04%, premarket volume 1.16M.",
+      "companyDesc": "Doximity",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $17.15.",
+      "invalidation": "Reclaim базы или 5m close выше $17.82.",
+      "targets": "$16.21, затем $15.65.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $17.55, ATR $1.50, avg volume 3.77M; catalyst/driver: TipRanks premarket loser: -22.04%, premarket volume 1.16M.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 17.15,
+        "stopPrice": 17.82,
+        "target1Price": 16.21,
+        "target2Price": 15.65
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": -22.04,
+        "price": 18.24,
+        "volume": "1.16M"
+      },
+      "levels": {
+        "prevHigh": 26.49,
+        "prevLow": 23.21,
+        "premarketHigh": 19.24,
+        "premarketLow": 17.73,
+        "dayHigh": 18.4,
+        "dayLow": 17.15,
+        "last": 17.56
+      },
+      "snapshotStatus": "waiting for 2-3 candle pullback / base after short impulse"
+    },
+    {
+      "symbol": "LUNR",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for short 5m impulse under premarket/morning low or failed bounce",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "7.4/10",
+      "price": "$36.36",
+      "atr": "$3.05",
+      "avgVolume": "14.69M",
+      "spread": "н/д",
+      "why": "active space name under premarket pressure; ATR fits but moves can be sharp, use structure only.",
+      "tradeCharacter": "TipRanks premarket loser: -9.95%, premarket volume 2.19M.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket loser: -9.95%, premarket volume 2.19M.",
+      "companyDesc": "Intuitive Machines",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $32.02.",
+      "invalidation": "Reclaim базы или 5m close выше $32.97.",
+      "targets": "$30.34, затем $28.97.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $36.36, ATR $3.05, avg volume 14.69M; catalyst/driver: TipRanks premarket loser: -9.95%, premarket volume 2.19M.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 32.02,
+        "stopPrice": 32.97,
+        "target1Price": 30.34,
+        "target2Price": 28.97
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": -9.95,
+        "price": 32.13,
+        "volume": "2.19M"
+      },
+      "levels": {
+        "prevHigh": 36.72,
+        "prevLow": 32.93,
+        "premarketHigh": 36.83,
+        "premarketLow": 32.02,
+        "dayHigh": 37,
+        "dayLow": 32.06,
+        "last": 36.36
+      },
+      "snapshotStatus": "waiting for short 5m impulse under premarket/morning low or failed bounce"
+    },
+    {
+      "symbol": "YETI",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Long",
+      "group": "core",
+      "status": "waiting for long 5m impulse above premarket/morning high",
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "7.2/10",
+      "price": "$40.80",
+      "atr": "$1.93",
+      "avgVolume": "1.49M",
+      "spread": "н/д",
+      "why": "premarket gap up; consumer discretionary name needs post-open volume confirmation because premarket volume is thin.",
+      "tradeCharacter": "TipRanks premarket gainer: +15.08%, premarket volume 73.2K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket gainer: +15.08%, premarket volume 73.2K.",
+      "companyDesc": "Yeti Holdings",
+      "trigger": "Long только после 5m impulse/pullback/base и выхода выше $44.13.",
+      "invalidation": "Потеря базы или 5m close ниже $43.27.",
+      "targets": "$45.35, затем $46.07.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $40.80, ATR $1.93, avg volume 1.49M; catalyst/driver: TipRanks premarket gainer: +15.08%, premarket volume 73.2K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 44.13,
+        "stopPrice": 43.27,
+        "target1Price": 45.35,
+        "target2Price": 46.07
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": 15.08,
+        "price": 44.11,
+        "volume": "73.2K"
+      },
+      "levels": {
+        "prevHigh": 39.7,
+        "prevLow": 38.09,
+        "premarketHigh": 42.45,
+        "premarketLow": 39.29,
+        "dayHigh": 44.13,
+        "dayLow": 39.94,
+        "last": 40.8
+      },
+      "snapshotStatus": "waiting for long 5m impulse above premarket/morning high"
+    },
+    {
+      "symbol": "RDW",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Long",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after long impulse",
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "long impulse seen; wait base, no chase"
+      },
+      "score": "6.8/10",
+      "price": "$14.29",
+      "atr": "$1.17",
+      "avgVolume": "27.08M",
+      "spread": "н/д",
+      "why": "space/defense momentum with strong premarket volume; lower-priced but passes price/ATR filter.",
+      "tradeCharacter": "TipRanks premarket gainer: +3.93%, premarket volume 1.79M.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket gainer: +3.93%, premarket volume 1.79M.",
+      "companyDesc": "Redwire",
+      "trigger": "Long только после 5m impulse/pullback/base и выхода выше $14.60.",
+      "invalidation": "Потеря базы или 5m close ниже $14.07.",
+      "targets": "$15.34, затем $15.77.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $14.29, ATR $1.17, avg volume 27.08M; catalyst/driver: TipRanks premarket gainer: +3.93%, premarket volume 1.79M.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 14.6,
+        "stopPrice": 14.07,
+        "target1Price": 15.34,
+        "target2Price": 15.77
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": 3.93,
+        "price": 11.91,
+        "volume": "1.79M"
+      },
+      "levels": {
+        "prevHigh": 11.79,
+        "prevLow": 10.91,
+        "premarketHigh": 12.1,
+        "premarketLow": 11.54,
+        "dayHigh": 14.6,
+        "dayLow": 11.88,
+        "last": 14.3
+      },
+      "snapshotStatus": "waiting for 2-3 candle pullback / base after long impulse"
+    },
+    {
+      "symbol": "LWLG",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after short impulse",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "short impulse seen; wait base, no chase"
+      },
+      "score": "6.8/10",
+      "price": "$15.09",
+      "atr": "$2.28",
+      "avgVolume": "9.88M",
+      "spread": "н/д",
+      "why": "volatile optical/tech momentum name fading premarket; trade only if spread stays controlled.",
+      "tradeCharacter": "TipRanks premarket loser: -6.62%, premarket volume 546K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket loser: -6.62%, premarket volume 546K.",
+      "companyDesc": "Lightwave Logic",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $14.28.",
+      "invalidation": "Reclaim базы или 5m close выше $15.23.",
+      "targets": "$12.95, затем $12.00.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $15.09, ATR $2.28, avg volume 9.88M; catalyst/driver: TipRanks premarket loser: -6.62%, premarket volume 546K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 14.28,
+        "stopPrice": 15.23,
+        "target1Price": 12.95,
+        "target2Price": 12
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": -6.62,
+        "price": 17.01,
+        "volume": "546K"
+      },
+      "levels": {
+        "prevHigh": 18.71,
+        "prevLow": 15.9,
+        "premarketHigh": 18.04,
+        "premarketLow": 16.88,
+        "dayHigh": 17.02,
+        "dayLow": 14.28,
+        "last": 15.09
+      },
+      "snapshotStatus": "waiting for 2-3 candle pullback / base after short impulse"
+    },
+    {
+      "symbol": "HPE",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Long",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after long impulse",
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "long impulse seen; wait base, no chase"
+      },
+      "score": "6.7/10",
+      "price": "$33.62",
+      "atr": "$1.25",
+      "avgVolume": "14.71M",
+      "spread": "н/д",
+      "why": "enterprise tech / AI infrastructure sympathy; liquid large-cap, good for clean 5m continuation only.",
+      "tradeCharacter": "TipRanks premarket gainer: +5.61%, premarket volume 642K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket gainer: +5.61%, premarket volume 642K.",
+      "companyDesc": "Hewlett Packard Enterprise",
+      "trigger": "Long только после 5m impulse/pullback/base и выхода выше $34.69.",
+      "invalidation": "Потеря базы или 5m close ниже $34.13.",
+      "targets": "$35.48, затем $35.95.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $33.62, ATR $1.25, avg volume 14.71M; catalyst/driver: TipRanks premarket gainer: +5.61%, premarket volume 642K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 34.69,
+        "stopPrice": 34.13,
+        "target1Price": 35.48,
+        "target2Price": 35.95
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": 5.61,
+        "price": 33.87,
+        "volume": "642K"
+      },
+      "levels": {
+        "prevHigh": 32.53,
+        "prevLow": 30.17,
+        "premarketHigh": 34.32,
+        "premarketLow": 32.07,
+        "dayHigh": 34.69,
+        "dayLow": 33.24,
+        "last": 33.62
+      },
+      "snapshotStatus": "waiting for 2-3 candle pullback / base after long impulse"
+    },
+    {
+      "symbol": "FIG",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Long",
+      "group": "core",
+      "status": "waiting for long 5m impulse above premarket/morning high",
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "6.6/10",
+      "price": "$19.99",
+      "atr": "$1.21",
+      "avgVolume": "15.94M",
+      "spread": "н/д",
+      "why": "software/IPO-style momentum with enough volume; needs tight base because tape can be fast.",
+      "tradeCharacter": "TipRanks premarket gainer: +4.83%, premarket volume 853K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket gainer: +4.83%, premarket volume 853K.",
+      "companyDesc": "Figma",
+      "trigger": "Long только после 5m impulse/pullback/base и выхода выше $20.45.",
+      "invalidation": "Потеря базы или 5m close ниже $19.90.",
+      "targets": "$21.22, затем $21.66.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $19.99, ATR $1.21, avg volume 15.94M; catalyst/driver: TipRanks premarket gainer: +4.83%, premarket volume 853K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 20.45,
+        "stopPrice": 19.9,
+        "target1Price": 21.22,
+        "target2Price": 21.66
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": 4.83,
+        "price": 19.86,
+        "volume": "853K"
+      },
+      "levels": {
+        "prevHigh": 19.31,
+        "prevLow": 18.51,
+        "premarketHigh": 20,
+        "premarketLow": 19.16,
+        "dayHigh": 20.45,
+        "dayLow": 19.05,
+        "last": 19.99
+      },
+      "snapshotStatus": "waiting for long 5m impulse above premarket/morning high"
+    },
+    {
+      "symbol": "KC",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for short 5m impulse under premarket/morning low or failed bounce",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "6.6/10",
+      "price": "$16.75",
+      "atr": "$1.01",
+      "avgVolume": "1.24M",
+      "spread": "н/д",
+      "why": "China cloud/tech weakness; premarket volume is thin, so require post-open confirmation.",
+      "tradeCharacter": "TipRanks premarket loser: -9.49%, premarket volume 82.6K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket loser: -9.49%, premarket volume 82.6K.",
+      "companyDesc": "Kingsoft Cloud",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $16.05.",
+      "invalidation": "Reclaim базы или 5m close выше $16.51.",
+      "targets": "$15.41, затем $15.04.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $16.75, ATR $1.01, avg volume 1.24M; catalyst/driver: TipRanks premarket loser: -9.49%, premarket volume 82.6K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 16.05,
+        "stopPrice": 16.51,
+        "target1Price": 15.41,
+        "target2Price": 15.04
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": -9.49,
+        "price": 16.22,
+        "volume": "82.6K"
+      },
+      "levels": {
+        "prevHigh": 18.52,
+        "prevLow": 15.63,
+        "premarketHigh": 17,
+        "premarketLow": 16.21,
+        "dayHigh": 17.07,
+        "dayLow": 16.05,
+        "last": 16.75
+      },
+      "snapshotStatus": "waiting for short 5m impulse under premarket/morning low or failed bounce"
+    },
+    {
+      "symbol": "GEHC",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for short 5m impulse under premarket/morning low or failed bounce",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "6.4/10",
+      "price": "$62.65",
+      "atr": "$2.32",
+      "avgVolume": "5.12M",
+      "spread": "н/д",
+      "why": "liquid healthcare equipment weakness; best as failure bounce short under resistance.",
+      "tradeCharacter": "Existing premarket loser scan; weak healthcare equipment tape.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "Existing premarket loser scan; weak healthcare equipment tape.",
+      "companyDesc": "GE HealthCare",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $61.50.",
+      "invalidation": "Reclaim базы или 5m close выше $62.45.",
+      "targets": "$60.17, затем $59.18.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $62.65, ATR $2.32, avg volume 5.12M; catalyst/driver: Existing premarket loser scan; weak healthcare equipment tape.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 61.5,
+        "stopPrice": 62.45,
+        "target1Price": 60.17,
+        "target2Price": 59.18
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": null,
+        "price": 62.66,
+        "volume": "н/д"
+      },
+      "levels": {
+        "prevHigh": 62.34,
+        "prevLow": 61.01,
+        "premarketHigh": 62.35,
+        "premarketLow": 61.5,
+        "dayHigh": 63.26,
+        "dayLow": 62.12,
+        "last": 62.65
+      },
+      "snapshotStatus": "waiting for short 5m impulse under premarket/morning low or failed bounce"
+    },
+    {
+      "symbol": "TNGX",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after short impulse",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "short impulse seen; wait base, no chase"
+      },
+      "score": "6.2/10",
+      "price": "$22.55",
+      "atr": "$1.89",
+      "avgVolume": "2.88M",
+      "spread": "н/д",
+      "why": "biotech weakness candidate; needs regular-session volume because premarket volume is light.",
+      "tradeCharacter": "TipRanks premarket loser: -5.45%, premarket volume 81.2K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket loser: -5.45%, premarket volume 81.2K.",
+      "companyDesc": "Tango Therapeutics",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $22.24.",
+      "invalidation": "Reclaim базы или 5m close выше $23.09.",
+      "targets": "$21.05, затем $20.35.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $22.55, ATR $1.89, avg volume 2.88M; catalyst/driver: TipRanks premarket loser: -5.45%, premarket volume 81.2K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 22.24,
+        "stopPrice": 23.09,
+        "target1Price": 21.05,
+        "target2Price": 20.35
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": -5.45,
+        "price": 24.12,
+        "volume": "81.2K"
+      },
+      "levels": {
+        "prevHigh": 25.76,
+        "prevLow": 22.77,
+        "premarketHigh": 25.44,
+        "premarketLow": 22.77,
+        "dayHigh": 24.85,
+        "dayLow": 22.24,
+        "last": 22.55
+      },
+      "snapshotStatus": "waiting for 2-3 candle pullback / base after short impulse"
+    },
+    {
+      "symbol": "SOLV",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Watch",
+      "group": "core",
+      "status": "watching both sides around key daily/hourly level",
+      "tapeCheck": {
+        "direction": "both",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "direction mixed"
+      },
+      "score": "6.0/10",
+      "price": "$74.03",
+      "atr": "$2.12",
+      "avgVolume": "1.36M",
+      "spread": "н/д",
+      "why": "healthcare products name near important $75 level; direction depends on reclaim vs loss of range.",
+      "tradeCharacter": "Existing premarket loser scan; clean price/ATR/volume fit near $75 daily level.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "Existing premarket loser scan; clean price/ATR/volume fit near $75 daily level.",
+      "companyDesc": "Solventum",
+      "trigger": "Watch around $74.03; direction only after 5m impulse + base.",
+      "invalidation": "Застревание внутри диапазона без volume expansion.",
+      "targets": "Long/short targets после выбора стороны: +/- 1.69 от trigger.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $74.03, ATR $2.12, avg volume 1.36M; catalyst/driver: Existing premarket loser scan; clean price/ATR/volume fit near $75 daily level.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 74.03,
+        "stopPrice": 72.97,
+        "target1Price": 75.72,
+        "target2Price": 72.34
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": null,
+        "price": 74.92,
+        "volume": "н/д"
+      },
+      "levels": {
+        "prevHigh": 75.4,
+        "prevLow": 74.01,
+        "premarketHigh": 75,
+        "premarketLow": 68.37,
+        "dayHigh": 75.23,
+        "dayLow": 73.88,
+        "last": 74.03
+      },
+      "snapshotStatus": "watching both sides around key daily/hourly level"
+    },
+    {
+      "symbol": "VLTO",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for short 5m impulse under premarket/morning low or failed bounce",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "6.0/10",
+      "price": "$85.72",
+      "atr": "$2.50",
+      "avgVolume": "1.89M",
+      "spread": "н/д",
+      "why": "quality industrial/water name near 20d low; needs clean breakdown, otherwise likely slow chop.",
+      "tradeCharacter": "Existing premarket loser scan; pressure near lower 20d range.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "Existing premarket loser scan; pressure near lower 20d range.",
+      "companyDesc": "Veralto",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $85.30.",
+      "invalidation": "Reclaim базы или 5m close выше $86.25.",
+      "targets": "$83.93, затем $82.80.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $85.72, ATR $2.50, avg volume 1.89M; catalyst/driver: Existing premarket loser scan; pressure near lower 20d range.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 85.3,
+        "stopPrice": 86.25,
+        "target1Price": 83.93,
+        "target2Price": 82.8
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": null,
+        "price": 85.79,
+        "volume": "н/д"
+      },
+      "levels": {
+        "prevHigh": 86.61,
+        "prevLow": 85.11,
+        "premarketHigh": 86.26,
+        "premarketLow": 85.85,
+        "dayHigh": 86.44,
+        "dayLow": 85.3,
+        "last": 85.72
+      },
+      "snapshotStatus": "waiting for short 5m impulse under premarket/morning low or failed bounce"
+    },
+    {
+      "symbol": "AMTM",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for short 5m impulse under premarket/morning low or failed bounce",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "6.0/10",
+      "price": "$23.13",
+      "atr": "$1.18",
+      "avgVolume": "1.90M",
+      "spread": "н/д",
+      "why": "mid-liquidity government services name near 20d low; breakdown needs volume.",
+      "tradeCharacter": "Existing premarket loser scan; near 20d low.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "Existing premarket loser scan; near 20d low.",
+      "companyDesc": "Amentum",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $22.84.",
+      "invalidation": "Reclaim базы или 5m close выше $23.37.",
+      "targets": "$22.10, затем $21.66.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $23.13, ATR $1.18, avg volume 1.90M; catalyst/driver: Existing premarket loser scan; near 20d low.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 22.84,
+        "stopPrice": 23.37,
+        "target1Price": 22.1,
+        "target2Price": 21.66
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": null,
+        "price": 23.21,
+        "volume": "н/д"
+      },
+      "levels": {
+        "prevHigh": 24.6,
+        "prevLow": 22.6,
+        "premarketHigh": 23.77,
+        "premarketLow": 22.84,
+        "dayHigh": 23.54,
+        "dayLow": 22.95,
+        "last": 23.13
+      },
+      "snapshotStatus": "waiting for short 5m impulse under premarket/morning low or failed bounce"
+    }
+  ],
+  "candidates": [
+    {
+      "symbol": "POET",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Long",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after long impulse",
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "long impulse seen; wait base, no chase"
+      },
+      "score": "8.2/10",
+      "price": "$19.70",
+      "atr": "$2.42",
+      "avgVolume": "48.73M",
+      "spread": "н/д",
+      "why": "premarket gainer with heavy volume; optical/AI infrastructure theme in play.",
+      "tradeCharacter": "TipRanks premarket gainer: +21.19%, premarket volume 19.97M.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket gainer: +21.19%, premarket volume 19.97M.",
+      "companyDesc": "POET Technologies",
+      "trigger": "Long только после 5m impulse/pullback/base и выхода выше $20.65.",
+      "invalidation": "Потеря базы или 5m close ниже $19.70.",
+      "targets": "$21.98, затем $23.07.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $19.70, ATR $2.42, avg volume 48.73M; catalyst/driver: TipRanks premarket gainer: +21.19%, premarket volume 19.97M.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 20.65,
+        "stopPrice": 19.7,
+        "target1Price": 21.98,
+        "target2Price": 23.07
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": 21.19,
+        "price": 17.41,
+        "volume": "19.97M"
+      },
+      "levels": {
+        "prevHigh": 14.75,
+        "prevLow": 12.94,
+        "premarketHigh": 18.83,
+        "premarketLow": 13.75,
+        "dayHigh": 20.65,
+        "dayLow": 17.39,
+        "last": 19.7
+      },
+      "rr": 1.400000000000003
+    },
+    {
+      "symbol": "DOCS",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after short impulse",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "short impulse seen; wait base, no chase"
+      },
+      "score": "8.2/10",
+      "price": "$17.55",
+      "atr": "$1.50",
+      "avgVolume": "3.77M",
+      "spread": "н/д",
+      "why": "major premarket gap down with volume; short continuation only after failed bounce/base breakdown.",
+      "tradeCharacter": "TipRanks premarket loser: -22.04%, premarket volume 1.16M.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket loser: -22.04%, premarket volume 1.16M.",
+      "companyDesc": "Doximity",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $17.15.",
+      "invalidation": "Reclaim базы или 5m close выше $17.82.",
+      "targets": "$16.21, затем $15.65.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $17.55, ATR $1.50, avg volume 3.77M; catalyst/driver: TipRanks premarket loser: -22.04%, premarket volume 1.16M.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 17.15,
+        "stopPrice": 17.82,
+        "target1Price": 16.21,
+        "target2Price": 15.65
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": -22.04,
+        "price": 18.24,
+        "volume": "1.16M"
+      },
+      "levels": {
+        "prevHigh": 26.49,
+        "prevLow": 23.21,
+        "premarketHigh": 19.24,
+        "premarketLow": 17.73,
+        "dayHigh": 18.4,
+        "dayLow": 17.15,
+        "last": 17.56
+      },
+      "rr": 1.4029850746268586
+    },
+    {
+      "symbol": "LUNR",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for short 5m impulse under premarket/morning low or failed bounce",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "7.4/10",
+      "price": "$36.36",
+      "atr": "$3.05",
+      "avgVolume": "14.69M",
+      "spread": "н/д",
+      "why": "active space name under premarket pressure; ATR fits but moves can be sharp, use structure only.",
+      "tradeCharacter": "TipRanks premarket loser: -9.95%, premarket volume 2.19M.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket loser: -9.95%, premarket volume 2.19M.",
+      "companyDesc": "Intuitive Machines",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $32.02.",
+      "invalidation": "Reclaim базы или 5m close выше $32.97.",
+      "targets": "$30.34, затем $28.97.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $36.36, ATR $3.05, avg volume 14.69M; catalyst/driver: TipRanks premarket loser: -9.95%, premarket volume 2.19M.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 32.02,
+        "stopPrice": 32.97,
+        "target1Price": 30.34,
+        "target2Price": 28.97
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": -9.95,
+        "price": 32.13,
+        "volume": "2.19M"
+      },
+      "levels": {
+        "prevHigh": 36.72,
+        "prevLow": 32.93,
+        "premarketHigh": 36.83,
+        "premarketLow": 32.02,
+        "dayHigh": 37,
+        "dayLow": 32.06,
+        "last": 36.36
+      },
+      "rr": 1.7684210526315902
+    },
+    {
+      "symbol": "YETI",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Long",
+      "group": "core",
+      "status": "waiting for long 5m impulse above premarket/morning high",
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "7.2/10",
+      "price": "$40.80",
+      "atr": "$1.93",
+      "avgVolume": "1.49M",
+      "spread": "н/д",
+      "why": "premarket gap up; consumer discretionary name needs post-open volume confirmation because premarket volume is thin.",
+      "tradeCharacter": "TipRanks premarket gainer: +15.08%, premarket volume 73.2K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket gainer: +15.08%, premarket volume 73.2K.",
+      "companyDesc": "Yeti Holdings",
+      "trigger": "Long только после 5m impulse/pullback/base и выхода выше $44.13.",
+      "invalidation": "Потеря базы или 5m close ниже $43.27.",
+      "targets": "$45.35, затем $46.07.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $40.80, ATR $1.93, avg volume 1.49M; catalyst/driver: TipRanks premarket gainer: +15.08%, premarket volume 73.2K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 44.13,
+        "stopPrice": 43.27,
+        "target1Price": 45.35,
+        "target2Price": 46.07
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": 15.08,
+        "price": 44.11,
+        "volume": "73.2K"
+      },
+      "levels": {
+        "prevHigh": 39.7,
+        "prevLow": 38.09,
+        "premarketHigh": 42.45,
+        "premarketLow": 39.29,
+        "dayHigh": 44.13,
+        "dayLow": 39.94,
+        "last": 40.8
+      },
+      "rr": 1.4186046511627903
+    },
+    {
+      "symbol": "RDW",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Long",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after long impulse",
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "long impulse seen; wait base, no chase"
+      },
+      "score": "6.8/10",
+      "price": "$14.29",
+      "atr": "$1.17",
+      "avgVolume": "27.08M",
+      "spread": "н/д",
+      "why": "space/defense momentum with strong premarket volume; lower-priced but passes price/ATR filter.",
+      "tradeCharacter": "TipRanks premarket gainer: +3.93%, premarket volume 1.79M.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket gainer: +3.93%, premarket volume 1.79M.",
+      "companyDesc": "Redwire",
+      "trigger": "Long только после 5m impulse/pullback/base и выхода выше $14.60.",
+      "invalidation": "Потеря базы или 5m close ниже $14.07.",
+      "targets": "$15.34, затем $15.77.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $14.29, ATR $1.17, avg volume 27.08M; catalyst/driver: TipRanks premarket gainer: +3.93%, premarket volume 1.79M.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 14.6,
+        "stopPrice": 14.07,
+        "target1Price": 15.34,
+        "target2Price": 15.77
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": 3.93,
+        "price": 11.91,
+        "volume": "1.79M"
+      },
+      "levels": {
+        "prevHigh": 11.79,
+        "prevLow": 10.91,
+        "premarketHigh": 12.1,
+        "premarketLow": 11.54,
+        "dayHigh": 14.6,
+        "dayLow": 11.88,
+        "last": 14.3
+      },
+      "rr": 1.3962264150943418
+    },
+    {
+      "symbol": "LWLG",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after short impulse",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "short impulse seen; wait base, no chase"
+      },
+      "score": "6.8/10",
+      "price": "$15.09",
+      "atr": "$2.28",
+      "avgVolume": "9.88M",
+      "spread": "н/д",
+      "why": "volatile optical/tech momentum name fading premarket; trade only if spread stays controlled.",
+      "tradeCharacter": "TipRanks premarket loser: -6.62%, premarket volume 546K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket loser: -6.62%, premarket volume 546K.",
+      "companyDesc": "Lightwave Logic",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $14.28.",
+      "invalidation": "Reclaim базы или 5m close выше $15.23.",
+      "targets": "$12.95, затем $12.00.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $15.09, ATR $2.28, avg volume 9.88M; catalyst/driver: TipRanks premarket loser: -6.62%, premarket volume 546K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 14.28,
+        "stopPrice": 15.23,
+        "target1Price": 12.95,
+        "target2Price": 12
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": -6.62,
+        "price": 17.01,
+        "volume": "546K"
+      },
+      "levels": {
+        "prevHigh": 18.71,
+        "prevLow": 15.9,
+        "premarketHigh": 18.04,
+        "premarketLow": 16.88,
+        "dayHigh": 17.02,
+        "dayLow": 14.28,
+        "last": 15.09
+      },
+      "rr": 1.3999999999999986
+    },
+    {
+      "symbol": "HPE",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Long",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after long impulse",
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "long impulse seen; wait base, no chase"
+      },
+      "score": "6.7/10",
+      "price": "$33.62",
+      "atr": "$1.25",
+      "avgVolume": "14.71M",
+      "spread": "н/д",
+      "why": "enterprise tech / AI infrastructure sympathy; liquid large-cap, good for clean 5m continuation only.",
+      "tradeCharacter": "TipRanks premarket gainer: +5.61%, premarket volume 642K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket gainer: +5.61%, premarket volume 642K.",
+      "companyDesc": "Hewlett Packard Enterprise",
+      "trigger": "Long только после 5m impulse/pullback/base и выхода выше $34.69.",
+      "invalidation": "Потеря базы или 5m close ниже $34.13.",
+      "targets": "$35.48, затем $35.95.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $33.62, ATR $1.25, avg volume 14.71M; catalyst/driver: TipRanks premarket gainer: +5.61%, premarket volume 642K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 34.69,
+        "stopPrice": 34.13,
+        "target1Price": 35.48,
+        "target2Price": 35.95
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": 5.61,
+        "price": 33.87,
+        "volume": "642K"
+      },
+      "levels": {
+        "prevHigh": 32.53,
+        "prevLow": 30.17,
+        "premarketHigh": 34.32,
+        "premarketLow": 32.07,
+        "dayHigh": 34.69,
+        "dayLow": 33.24,
+        "last": 33.62
+      },
+      "rr": 1.4107142857142965
+    },
+    {
+      "symbol": "FIG",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Long",
+      "group": "core",
+      "status": "waiting for long 5m impulse above premarket/morning high",
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "6.6/10",
+      "price": "$19.99",
+      "atr": "$1.21",
+      "avgVolume": "15.94M",
+      "spread": "н/д",
+      "why": "software/IPO-style momentum with enough volume; needs tight base because tape can be fast.",
+      "tradeCharacter": "TipRanks premarket gainer: +4.83%, premarket volume 853K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket gainer: +4.83%, premarket volume 853K.",
+      "companyDesc": "Figma",
+      "trigger": "Long только после 5m impulse/pullback/base и выхода выше $20.45.",
+      "invalidation": "Потеря базы или 5m close ниже $19.90.",
+      "targets": "$21.22, затем $21.66.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $19.99, ATR $1.21, avg volume 15.94M; catalyst/driver: TipRanks premarket gainer: +4.83%, premarket volume 853K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 20.45,
+        "stopPrice": 19.9,
+        "target1Price": 21.22,
+        "target2Price": 21.66
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": 4.83,
+        "price": 19.86,
+        "volume": "853K"
+      },
+      "levels": {
+        "prevHigh": 19.31,
+        "prevLow": 18.51,
+        "premarketHigh": 20,
+        "premarketLow": 19.16,
+        "dayHigh": 20.45,
+        "dayLow": 19.05,
+        "last": 19.99
+      },
+      "rr": 1.3999999999999975
+    },
+    {
+      "symbol": "KC",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for short 5m impulse under premarket/morning low or failed bounce",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "6.6/10",
+      "price": "$16.75",
+      "atr": "$1.01",
+      "avgVolume": "1.24M",
+      "spread": "н/д",
+      "why": "China cloud/tech weakness; premarket volume is thin, so require post-open confirmation.",
+      "tradeCharacter": "TipRanks premarket loser: -9.49%, premarket volume 82.6K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket loser: -9.49%, premarket volume 82.6K.",
+      "companyDesc": "Kingsoft Cloud",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $16.05.",
+      "invalidation": "Reclaim базы или 5m close выше $16.51.",
+      "targets": "$15.41, затем $15.04.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $16.75, ATR $1.01, avg volume 1.24M; catalyst/driver: TipRanks premarket loser: -9.49%, premarket volume 82.6K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 16.05,
+        "stopPrice": 16.51,
+        "target1Price": 15.41,
+        "target2Price": 15.04
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": -9.49,
+        "price": 16.22,
+        "volume": "82.6K"
+      },
+      "levels": {
+        "prevHigh": 18.52,
+        "prevLow": 15.63,
+        "premarketHigh": 17,
+        "premarketLow": 16.21,
+        "dayHigh": 17.07,
+        "dayLow": 16.05,
+        "last": 16.75
+      },
+      "rr": 1.3913043478260856
+    },
+    {
+      "symbol": "GEHC",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for short 5m impulse under premarket/morning low or failed bounce",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "6.4/10",
+      "price": "$62.65",
+      "atr": "$2.32",
+      "avgVolume": "5.12M",
+      "spread": "н/д",
+      "why": "liquid healthcare equipment weakness; best as failure bounce short under resistance.",
+      "tradeCharacter": "Existing premarket loser scan; weak healthcare equipment tape.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "Existing premarket loser scan; weak healthcare equipment tape.",
+      "companyDesc": "GE HealthCare",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $61.50.",
+      "invalidation": "Reclaim базы или 5m close выше $62.45.",
+      "targets": "$60.17, затем $59.18.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $62.65, ATR $2.32, avg volume 5.12M; catalyst/driver: Existing premarket loser scan; weak healthcare equipment tape.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 61.5,
+        "stopPrice": 62.45,
+        "target1Price": 60.17,
+        "target2Price": 59.18
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": null,
+        "price": 62.66,
+        "volume": "н/д"
+      },
+      "levels": {
+        "prevHigh": 62.34,
+        "prevLow": 61.01,
+        "premarketHigh": 62.35,
+        "premarketLow": 61.5,
+        "dayHigh": 63.26,
+        "dayLow": 62.12,
+        "last": 62.65
+      },
+      "rr": 1.399999999999994
+    },
+    {
+      "symbol": "TNGX",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for 2-3 candle pullback / base after short impulse",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": true,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "short impulse seen; wait base, no chase"
+      },
+      "score": "6.2/10",
+      "price": "$22.55",
+      "atr": "$1.89",
+      "avgVolume": "2.88M",
+      "spread": "н/д",
+      "why": "biotech weakness candidate; needs regular-session volume because premarket volume is light.",
+      "tradeCharacter": "TipRanks premarket loser: -5.45%, premarket volume 81.2K.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "TipRanks premarket loser: -5.45%, premarket volume 81.2K.",
+      "companyDesc": "Tango Therapeutics",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $22.24.",
+      "invalidation": "Reclaim базы или 5m close выше $23.09.",
+      "targets": "$21.05, затем $20.35.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $22.55, ATR $1.89, avg volume 2.88M; catalyst/driver: TipRanks premarket loser: -5.45%, premarket volume 81.2K.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 22.24,
+        "stopPrice": 23.09,
+        "target1Price": 21.05,
+        "target2Price": 20.35
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": -5.45,
+        "price": 24.12,
+        "volume": "81.2K"
+      },
+      "levels": {
+        "prevHigh": 25.76,
+        "prevLow": 22.77,
+        "premarketHigh": 25.44,
+        "premarketLow": 22.77,
+        "dayHigh": 24.85,
+        "dayLow": 22.24,
+        "last": 22.55
+      },
+      "rr": 1.399999999999995
+    },
+    {
+      "symbol": "SOLV",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Watch",
+      "group": "core",
+      "status": "watching both sides around key daily/hourly level",
+      "tapeCheck": {
+        "direction": "both",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "direction mixed"
+      },
+      "score": "6.0/10",
+      "price": "$74.03",
+      "atr": "$2.12",
+      "avgVolume": "1.36M",
+      "spread": "н/д",
+      "why": "healthcare products name near important $75 level; direction depends on reclaim vs loss of range.",
+      "tradeCharacter": "Existing premarket loser scan; clean price/ATR/volume fit near $75 daily level.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "Existing premarket loser scan; clean price/ATR/volume fit near $75 daily level.",
+      "companyDesc": "Solventum",
+      "trigger": "Watch around $74.03; direction only after 5m impulse + base.",
+      "invalidation": "Застревание внутри диапазона без volume expansion.",
+      "targets": "Long/short targets после выбора стороны: +/- 1.69 от trigger.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $74.03, ATR $2.12, avg volume 1.36M; catalyst/driver: Existing premarket loser scan; clean price/ATR/volume fit near $75 daily level.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 74.03,
+        "stopPrice": 72.97,
+        "target1Price": 75.72,
+        "target2Price": 72.34
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": null,
+        "price": 74.92,
+        "volume": "н/д"
+      },
+      "levels": {
+        "prevHigh": 75.4,
+        "prevLow": 74.01,
+        "premarketHigh": 75,
+        "premarketLow": 68.37,
+        "dayHigh": 75.23,
+        "dayLow": 73.88,
+        "last": 74.03
+      },
+      "rr": 1.5943396226415039
+    },
+    {
+      "symbol": "VLTO",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for short 5m impulse under premarket/morning low or failed bounce",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "6.0/10",
+      "price": "$85.72",
+      "atr": "$2.50",
+      "avgVolume": "1.89M",
+      "spread": "н/д",
+      "why": "quality industrial/water name near 20d low; needs clean breakdown, otherwise likely slow chop.",
+      "tradeCharacter": "Existing premarket loser scan; pressure near lower 20d range.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "Existing premarket loser scan; pressure near lower 20d range.",
+      "companyDesc": "Veralto",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $85.30.",
+      "invalidation": "Reclaim базы или 5m close выше $86.25.",
+      "targets": "$83.93, затем $82.80.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $85.72, ATR $2.50, avg volume 1.89M; catalyst/driver: Existing premarket loser scan; pressure near lower 20d range.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 85.3,
+        "stopPrice": 86.25,
+        "target1Price": 83.93,
+        "target2Price": 82.8
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": null,
+        "price": 85.79,
+        "volume": "н/д"
+      },
+      "levels": {
+        "prevHigh": 86.61,
+        "prevLow": 85.11,
+        "premarketHigh": 86.26,
+        "premarketLow": 85.85,
+        "dayHigh": 86.44,
+        "dayLow": 85.3,
+        "last": 85.72
+      },
+      "rr": 1.4421052631578803
+    },
+    {
+      "symbol": "AMTM",
+      "exchange": "NASDAQ/NYSE",
+      "bias": "Short",
+      "group": "core",
+      "status": "waiting for short 5m impulse under premarket/morning low or failed bounce",
+      "tapeCheck": {
+        "direction": "short",
+        "impulse5m": false,
+        "dailyHourlyBreak": true,
+        "pullback23": false,
+        "note": "no clean trigger yet"
+      },
+      "score": "6.0/10",
+      "price": "$23.13",
+      "atr": "$1.18",
+      "avgVolume": "1.90M",
+      "spread": "н/д",
+      "why": "mid-liquidity government services name near 20d low; breakdown needs volume.",
+      "tradeCharacter": "Existing premarket loser scan; near 20d low.",
+      "sectorPeers": "см. sector/peer confirmation в новости и broad tape; не торговать, если движение только повторяет SPY/QQQ.",
+      "dayDriver": "Existing premarket loser scan; near 20d low.",
+      "companyDesc": "Amentum",
+      "trigger": "Short только после 5m impulse/pullback/base и пробоя/failed bounce ниже $22.84.",
+      "invalidation": "Reclaim базы или 5m close выше $23.37.",
+      "targets": "$22.10, затем $21.66.",
+      "postOpen": true,
+      "scoreReason": "passes filters: price $23.13, ATR $1.18, avg volume 1.90M; catalyst/driver: Existing premarket loser scan; near 20d low.",
+      "filterFlags": [],
+      "planLevels": {
+        "triggerPrice": 22.84,
+        "stopPrice": 23.37,
+        "target1Price": 22.1,
+        "target2Price": 21.66
+      },
+      "riskContext": "Фильтры пройдены, но spread не подтвержден источником: перед входом проверить <= $0.10. Risk/share держать около $0.50; если 5m база шире — skip или уменьшить размер.",
+      "premarket": {
+        "changePct": null,
+        "price": 23.21,
+        "volume": "н/д"
+      },
+      "levels": {
+        "prevHigh": 24.6,
+        "prevLow": 22.6,
+        "premarketHigh": 23.77,
+        "premarketLow": 22.84,
+        "dayHigh": 23.54,
+        "dayLow": 22.95,
+        "last": 23.13
+      },
+      "rr": 1.3962264150943338
+    }
+  ],
+  "tradeManagement": {},
+  "activeTrades": [],
+  "journal": [],
+  "topAlerts": [
+    {
+      "symbol": "POET",
+      "type": "5m impulse/pullback/base long",
+      "trigger": "watch reclaim/hold above morning high; no chase after first impulse"
+    },
+    {
+      "symbol": "DOCS",
+      "type": "failed bounce short",
+      "trigger": "wait 2-3 candle bounce into VWAP/resistance, base, breakdown"
+    },
+    {
+      "symbol": "LUNR",
+      "type": "5m short continuation",
+      "trigger": "short only after lower-high base; ATR allows but movement is fast"
+    },
+    {
+      "symbol": "RDW",
+      "type": "long continuation",
+      "trigger": "needs volume expansion and tight base above $12 area"
+    },
+    {
+      "symbol": "HPE",
+      "type": "liquid long pullback",
+      "trigger": "enterprise tech sympathy; wait base after impulse"
+    }
+  ],
+  "dailyContext": {
+    "market": "TipRanks snapshot showed S&P 500, Dow, Nasdaq and US futures positive during the session; Yahoo Finance highlighted positive futures around the Trump-Xi summit. Bias: long setups can work, but single-stock catalyst still required.",
+    "risk": "BTC was positive in the TipRanks snapshot; China/tech ADRs can move with headline risk. Spread is not available from current sources."
+  },
+  "updatedAt": "2026-05-14T17:51:10.116Z"
+}
