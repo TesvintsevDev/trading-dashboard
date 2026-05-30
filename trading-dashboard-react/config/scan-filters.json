@@ -1,0 +1,9 @@
+{
+  "priceMin": 5,
+  "priceMax": 500,
+  "atrMin": 0.5,
+  "atrMax": 10,
+  "minVolume": 100000,
+  "maxSpread": 0.25,
+  "minRR": 1.2
+}

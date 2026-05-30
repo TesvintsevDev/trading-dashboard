@@ -1,0 +1,37 @@
+{
+  "appVersion": 1,
+  "date": "2026-01-01",
+  "pageTitle": "Demo watchlist",
+  "note": "Sample data for local development only.",
+  "defaultSymbol": "AAPL",
+  "marketDataFile": "market-data-demo.json",
+  "premarketSnapshot": [],
+  "candidates": [
+    {
+      "symbol": "AAPL",
+      "exchange": "NASDAQ",
+      "bias": "Watch",
+      "group": "core",
+      "status": "Demo",
+      "score": "—",
+      "price": "$200.00",
+      "atr": "$3.00",
+      "avgVolume": "50M",
+      "spread": "н/д",
+      "postOpen": false,
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": false,
+        "note": "demo"
+      },
+      "filterFlags": [],
+      "why": "Demo candidate.",
+      "trigger": "—",
+      "invalidation": "—",
+      "targets": "—"
+    }
+  ],
+  "tradeManagement": {},
+  "activeTrades": [],
+  "journal": []
+}

@@ -1,0 +1,73 @@
+{
+  "appVersion": 2,
+  "date": "2026-01-01",
+  "pageTitle": "Demo watchlist",
+  "note": "Sample data for local development only.",
+  "defaultSymbol": "AAPL",
+  "marketDataFile": "market-data-demo.json",
+  "candidates": [
+    {
+      "symbol": "AAPL",
+      "exchange": "NASDAQ",
+      "bias": "Watch",
+      "group": "core",
+      "status": "Demo",
+      "score": "—",
+      "price": "$200.00",
+      "atr": "$3.00",
+      "avgVolume": "50M",
+      "spread": "н/д",
+      "setupStatus": "premarket",
+      "postOpen": false,
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": false,
+        "dailyHourlyBreak": false,
+        "pullback23": false,
+        "note": "demo"
+      },
+      "filterFlags": [],
+      "why": "Demo candidate.",
+      "trigger": "—",
+      "invalidation": "—",
+      "targets": "—"
+    },
+    {
+      "symbol": "MSFT",
+      "exchange": "NASDAQ",
+      "bias": "Watch",
+      "group": "core",
+      "status": "Demo",
+      "score": "—",
+      "price": "$420.00",
+      "atr": "$4.00",
+      "avgVolume": "20M",
+      "spread": "н/д",
+      "setupStatus": "premarket",
+      "postOpen": false,
+      "tapeCheck": {
+        "direction": "long",
+        "impulse5m": false,
+        "dailyHourlyBreak": false,
+        "pullback23": false,
+        "note": "demo"
+      },
+      "filterFlags": [],
+      "why": "Demo candidate.",
+      "trigger": "—",
+      "invalidation": "—",
+      "targets": "—"
+    }
+  ],
+  "premarketSnapshot": [],
+  "tradeManagement": {},
+  "activeTrades": [],
+  "journal": [],
+  "topAlerts": [],
+  "dailyContext": {
+    "market": "Demo.",
+    "risk": "—",
+    "longBias": "—",
+    "shortBias": "—"
+  }
+}
