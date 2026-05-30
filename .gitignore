@@ -4,6 +4,13 @@ trading-dashboard-react/storage/
 *.sqlite-shm
 *.sqlite-wal
 
+# Cursor / Codex (skills, rules — only on your machine)
+.cursor/
+**/.cursor/
+**/skills/
+SKILL.md
+**/*.mdc
+
 # Environment and secrets
 .env
 .env.*
