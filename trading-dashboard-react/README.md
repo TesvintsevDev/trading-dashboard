@@ -2,7 +2,7 @@
 
 Local React/Vite dashboard for intraday US stocks workflow: premarket planning, post-open 5m structure checks, live watchlist, trade management, and ticker context.
 
-The original Node/HTML MVP lives in [`legacy/trading-dashboard/`](legacy/trading-dashboard/) for reference (static `public/` UI + `server.js` on port 8788).
+The original Node/HTML MVP lives in /trading-dashboard
 
 ## Run
 
